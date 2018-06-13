@@ -36,7 +36,7 @@ public class addmessege extends AppCompatActivity implements View.OnClickListene
         FirebaseAuth auth = FirebaseAuth.getInstance();
         FirebaseUser user = auth.getCurrentUser();
         Bottle p = new Bottle();
-        p.setMessege(messege);
+        p.setMessage(messege);
         p.setEmail(user.getEmail().replace('.','*'));
         DatabaseReference reference;
 

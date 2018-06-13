@@ -6,55 +6,49 @@ package com.tasnem.khalel.khaleltasnem;
 
 public class Bottle {
 
-    /**
-     * the nmessege
-     */
+    private String message;
 
-    private String messege;
+    private String keyId;
 
-    public void setMessege(String messege) {
-        this.messege = messege;
-    }
+    private String email;
 
-    public void setKeyId(String keyId) {
+    public Bottle(String message, String keyId) {
+        this.message = message;
         this.keyId = keyId;
     }
 
-    public void setEmail(String email) {
+    public Bottle() {
+    }
+
+    public Bottle(String message) {
+        this.message = message;
         this.email = email;
     }
 
-    public String getMessege() {
+    public String getMessage() {
+        return message;
+    }
 
-        return messege;
+    public void setMessage(String message) {
+        this.message = message;
     }
 
     public String getKeyId() {
         return keyId;
     }
 
+    public void setKeyId(String keyId) {
+        this.keyId = keyId;
+    }
+
     public String getEmail() {
         return email;
     }
 
-    private String keyId;
-
-    public Bottle() {
-        this.messege = messege;
-        this.keyId = keyId;
+    public void setEmail(String email) {
         this.email = email;
     }
-
-    private String email;
-
-    @Override
-    public String toString() {
-        return "Bottle{" +
-                "messege='" + messege + '\'' +
-                ", keyId='" + keyId + '\'' +
-                ", email=" + email + '\'' +
-                '}';
-
-    }
 }
+
+
 
